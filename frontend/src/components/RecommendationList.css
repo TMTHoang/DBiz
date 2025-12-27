@@ -1,0 +1,365 @@
+/* Recommendation List Styles */
+.recommendation-container {
+  min-height: 100vh;
+  background: #FFFFFF;
+  font-family: 'Figtree', sans-serif;
+}
+
+/* Logo Header */
+.rec-logo-header {
+  padding: 20px 72px;
+  border-bottom: 1px solid #E5E5E5;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #FFFFFF;
+}
+
+.rec-logo-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.rec-logo-text-header {
+  font-size: 24px;
+  font-weight: 500;
+  color: #1B223C;
+  font-family: 'Outfit', sans-serif;
+}
+
+/* Hero Section */
+.rec-hero {
+  background: linear-gradient(135deg, rgba(98, 137, 73, 0.9) 0%, rgba(123, 163, 92, 0.85) 50%, rgba(152, 200, 64, 0.8) 100%);
+  padding: 80px 166px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  color: white;
+}
+
+.rec-hero-text {
+  text-align: center;
+}
+
+.rec-hero-title {
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 1.14;
+  margin: 0 0 12px 0;
+}
+
+.rec-hero-subtitle {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0;
+}
+
+/* Search/Filter Section */
+.rec-search-section {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  min-width: 900px;
+}
+
+.rec-search-wrapper {
+  flex: 1;
+  position: relative;
+}
+
+.rec-search-input {
+  width: 100%;
+  padding: 20px;
+  border: none;
+  border-right: 1px solid rgba(199, 199, 199, 0.6);
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.5);
+  outline: none;
+}
+
+.rec-suggestions {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  border: 1px solid rgba(199, 199, 199, 0.6);
+  border-top: none;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.rec-suggestion-item {
+  padding: 12px 20px;
+  cursor: pointer;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.7);
+  transition: background 0.2s;
+}
+
+.rec-suggestion-item:hover {
+  background: rgba(98, 137, 73, 0.1);
+  color: #628949;
+}
+
+.rec-select-wrapper {
+  flex: 1;
+  position: relative;
+  border-right: 1px solid rgba(199, 199, 199, 0.6);
+}
+
+.rec-select-wrapper:last-of-type {
+  border-right: none;
+}
+
+.rec-select-label {
+  position: absolute;
+  top: 8px;
+  left: 20px;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.rec-select {
+  width: 100%;
+  padding: 28px 20px 12px 20px;
+  border: none;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.8);
+  background: transparent;
+  cursor: pointer;
+  outline: none;
+}
+
+.rec-search-btn {
+  background: #628949;
+  border: none;
+  border-radius: 0 16px 16px 0;
+  padding: 14px 28px;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: background 0.3s;
+}
+
+.rec-search-btn:hover {
+  background: #527539;
+}
+
+/* Agencies Section */
+.rec-agencies-section {
+  padding: 60px 72px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.rec-agencies-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 60px;
+}
+
+.rec-agencies-header-text h2 {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+  margin: 0 0 40px 0;
+  color: #000000;
+}
+
+.rec-agencies-header-text p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #000000;
+  margin: 0;
+  max-width: 467px;
+}
+
+.rec-view-all {
+  font-size: 24px;
+  font-weight: 600;
+  color: #628949;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Agency Cards */
+.rec-agencies-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.rec-agency-card {
+  display: flex;
+  gap: 28px;
+  padding: 40px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0px 3px 8px rgba(48, 150, 137, 0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.rec-agency-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 6px 16px rgba(48, 150, 137, 0.12);
+}
+
+/* Agency Card Header */
+.rec-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 24px;
+}
+
+.rec-agency-badge-icon {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.rec-status-badge {
+  padding: 8px;
+  background: rgba(48, 150, 137, 0.1);
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #309689;
+  line-height: 1.2;
+}
+
+.rec-favorite-icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+/* Agency Logo and Info */
+.rec-logo-text {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.rec-agency-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.rec-agency-info h3 {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #000000;
+  margin: 0 0 20px 0;
+}
+
+.rec-agency-name {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #000000;
+  margin: 0;
+}
+
+/* Agency Card Footer */
+.rec-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.rec-details {
+  display: flex;
+  gap: 24px;
+  align-items: flex-end;
+}
+
+.rec-detail-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.rec-detail-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.rec-detail-text {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #6C757D;
+}
+
+.rec-connect-btn {
+  background: #628949;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s;
+  height: 40px;
+  min-width: 100px;
+}
+
+.rec-connect-btn:hover {
+  background: #527539;
+  transform: translateY(-2px);
+}
+
+/* Rating and Match Score */
+.rec-scores {
+  display: flex;
+  gap: 16px;
+  margin-top: 12px;
+}
+
+.rec-score-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #6C757D;
+}
+
+.rec-star-icon {
+  width: 16px;
+  height: 16px;
+  color: #FFB800;
+}
+
+/* Loading State */
+.rec-loading {
+  text-align: center;
+  padding: 60px;
+  font-size: 18px;
+  color: #6C757D;
+}

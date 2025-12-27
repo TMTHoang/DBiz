@@ -1,0 +1,1098 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.sme-homepage {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #FFFFFF;
+  font-family: 'Nunito', sans-serif;
+}
+
+/* Top Navigation Bar */
+.sme-top-bar {
+  width: 100%;
+  height: 90px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.16);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 52px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.sme-top-left {
+  display: flex;
+  align-items: center;
+  gap: 154px;
+}
+
+.sme-logo-section {
+  display: flex;
+  align-items: center;
+  gap: 8.4px;
+}
+
+.sme-logo-img {
+  width: 46.2px;
+  height: 46.2px;
+}
+
+.sme-logo-text {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 500;
+  font-size: 25.2px;
+  line-height: 35.7px;
+  color: #1B223C;
+}
+
+.sme-top-menu {
+  display: flex;
+  gap: 46.2px;
+  align-items: center;
+}
+
+.sme-menu-link {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 500;
+  font-size: 18.9px;
+  line-height: 35.7px;
+  color: #1B223C;
+  text-decoration: none;
+  text-align: center;
+}
+
+.sme-top-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.sme-search-container {
+  display: flex;
+  width: 363px;
+  height: 36px;
+  position: relative;
+}
+
+.sme-search-input {
+  width: 327px;
+  height: 36px;
+  background: #FFFFFF;
+  border: 1px solid rgba(20, 20, 20, 0.1);
+  border-radius: 4px 0 0 4px;
+  padding: 0 18px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #D4D4D4;
+}
+
+.sme-search-button {
+  width: 36px;
+  height: 36px;
+  background: #628949;
+  border-radius: 0 4px 4px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.sme-search-button img {
+  width: 24px;
+  height: 24px;
+}
+
+.sme-notification-bell {
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+}
+
+.sme-profile-pic {
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  background: #FFD9A2;
+  background-image: url('https://via.placeholder.com/33');
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+}
+
+/* Dashboard Container */
+.sme-dashboard-container {
+  margin-top: 90px;
+  width: 100%;
+  display: flex;
+  min-height: calc(100vh - 90px);
+}
+
+/* Left Sidebar */
+.sme-left-sidebar {
+  width: 342px;
+  min-height: 100%;
+  background: #FFFFFF;
+  box-shadow: 0px 3px 35.16px rgba(0, 0, 0, 0.08);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sme-sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 14.6px;
+}
+
+.sme-nav-item {
+  display: flex;
+  align-items: center;
+  padding: 7.3px;
+  gap: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 14.6px;
+  line-height: 22px;
+  letter-spacing: 1%;
+  color: #5D7285;
+  cursor: pointer;
+  border-radius: 6px;
+  background: #E9F5FE;
+}
+
+.sme-nav-item.active {
+  background: rgba(181, 194, 251, 0.18);
+  font-weight: 600;
+}
+
+.sme-nav-icon {
+  width: 29.3px;
+  height: 29.3px;
+  background: #B5C2FB;
+  border-radius: 4px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+/* Home Icon */
+.sme-nav-item:nth-child(1) .sme-nav-icon::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 16px;
+  height: 16px;
+  background: #5D7285;
+  clip-path: polygon(50% 0%, 100% 38%, 82% 38%, 82% 100%, 18% 100%, 18% 38%, 0% 38%);
+}
+
+/* Project Icon */
+.sme-nav-item:nth-child(2) .sme-nav-icon::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 16px;
+  height: 14px;
+  background: #5D7285;
+  clip-path: polygon(0 20%, 20% 0, 80% 0, 100% 20%, 100% 100%, 0 100%);
+}
+
+/* Tasks Icon */
+.sme-nav-item:nth-child(3) .sme-nav-icon::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 16px;
+  height: 16px;
+  border: 2px solid #5D7285;
+  border-radius: 3px;
+}
+
+.sme-nav-item:nth-child(3) .sme-nav-icon::after {
+  content: '✓';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #5D7285;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* Work Logs Icon */
+.sme-nav-item:nth-child(4) .sme-nav-icon::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 14px;
+  height: 16px;
+  background: linear-gradient(#5D7285 0 4px, transparent 4px 6px, #5D7285 6px 10px, transparent 10px 12px, #5D7285 12px 16px);
+  border-radius: 2px;
+}
+
+/* Performance Icon */
+.sme-nav-item:nth-child(5) .sme-nav-icon::before {
+  content: '';
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 14px;
+  height: 2px;
+  background: #5D7285;
+  box-shadow: 
+    -4px -3px 0 0 #5D7285,
+    0px -6px 0 0 #5D7285,
+    4px -9px 0 0 #5D7285;
+}
+
+/* Settings Icon */
+.sme-nav-item:nth-child(6) .sme-nav-icon::before {
+  content: '⚙';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #5D7285;
+  font-size: 18px;
+}
+
+.sme-manage-card {
+  width: 100%;
+  height: 145px;
+  background: #FFFFFF;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: auto;
+}
+
+.sme-manage-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.sme-manage-title {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21.8px;
+  color: #1B1B1B;
+}
+
+.sme-manage-text {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21.8px;
+  color: #6C6C6C;
+}
+
+.sme-manage-btn {
+  width: 100%;
+  height: 48px;
+  background: #628949;
+  border-radius: 8px;
+  border: none;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 32.7px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+/* Main Content Area */
+.sme-main-content {
+  flex: 1;
+  padding: 32px 40px;
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.sme-user-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sme-user-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sme-user-avatar-pic {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #FFD9A2;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.sme-user-avatar-pic::before {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 10px;
+  background: #1B1B1B;
+  border-radius: 50%;
+}
+
+.sme-user-avatar-pic::after {
+  content: '';
+  position: absolute;
+  bottom: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 16px;
+  height: 10px;
+  background: #1B1B1B;
+  border-radius: 50% 50% 0 0;
+}
+
+.sme-user-name-section {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.sme-user-name-text {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21.8px;
+  color: #1B1B1B;
+}
+
+.sme-dropdown-arrow {
+  width: 16px;
+  height: 16px;
+}
+
+.sme-user-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.sme-search-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 12px;
+  width: 216px;
+  background: #F4F4F4;
+  border-radius: 8px;
+}
+
+.sme-search-text {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21.8px;
+  color: #909090;
+  flex: 1;
+}
+
+.sme-search-icon-small {
+  width: 24px;
+  height: 24px;
+}
+
+.sme-notif-icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+/* Welcome Section */
+.sme-welcome-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.sme-welcome-left {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sme-welcome-heading {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 43.6px;
+  color: #1B1B1B;
+}
+
+.sme-welcome-subheading {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27.3px;
+  color: #628949;
+}
+
+.sme-filter-button {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 12px;
+  background: #FFFFFF;
+  border: 1px solid #E3E3E3;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21.8px;
+  color: #1B1B1B;
+}
+
+.sme-filter-button img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Stats Row */
+.sme-stats-row {
+  display: flex;
+  gap: 16px;
+}
+
+.sme-stat-card {
+  width: 220px;
+  height: 112px;
+  background: #FFFFFF;
+  border: 1px solid #E3E3E3;
+  border-radius: 16px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.sme-stat-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sme-stat-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.sme-stat-label {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21.8px;
+  color: #1B1B1B;
+}
+
+.sme-stat-value {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 32px;
+  color: #1B1B1B;
+}
+
+.sme-stat-value.large {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 32px;
+}
+
+.sme-stat-link {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19.1px;
+  color: #909090;
+  text-decoration: none;
+}
+
+/* Priority Projects Section */
+.sme-priority-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.sme-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.sme-section-title {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27.3px;
+  color: #628949;
+}
+
+.sme-section-link {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19.1px;
+  color: #909090;
+  text-decoration: none;
+}
+
+.sme-priority-cards {
+  display: flex;
+  gap: 16px;
+}
+
+.sme-priority-card {
+  width: 338px;
+  height: 207px;
+  background: #FFFFFF;
+  border: 1px solid #E3E3E3;
+  border-radius: 16px;
+  padding: 16px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.sme-priority-badge {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16.4px;
+  z-index: 10;
+}
+
+.sme-priority-badge.high {
+  border: 1px solid #EC284E;
+  color: #EC284E;
+  background: #FFFFFF;
+}
+
+.sme-priority-badge.medium {
+  border: 1px solid #D7A601;
+  color: #D7A601;
+  background: #FFFFFF;
+}
+
+.sme-priority-vertical-line {
+  position: absolute;
+  left: 16px;
+  top: 16px;
+  width: 3px;
+  height: 68px;
+  border-radius: 2px;
+}
+
+.sme-priority-vertical-line.red {
+  background: #EC284E;
+}
+
+.sme-priority-vertical-line.yellow {
+  background: #D7A601;
+}
+
+.sme-priority-title {
+  margin-top: 0;
+  margin-left: 12px;
+  padding-right: 120px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21.8px;
+  color: #1B1B1B;
+}
+
+.sme-priority-subtitle {
+  margin-left: 12px;
+  margin-top: 4px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14.1px;
+  color: #909090;
+}
+
+.sme-priority-tag {
+  position: absolute;
+  bottom: 60px;
+  right: 16px;
+  padding: 4px 12px;
+  background: #F0F0F0;
+  border-radius: 4px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16.4px;
+  color: #1B1B1B;
+  z-index: 10;
+}
+
+.sme-priority-avatars {
+  position: absolute;
+  bottom: 35px;
+  right: 72px;
+  display: flex;
+  z-index: 10;
+}
+
+.sme-priority-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #FFE6E0;
+  border: 1px solid #FFFFFF;
+  margin-left: -8px;
+}
+
+.sme-priority-avatar:first-child {
+  margin-left: 0;
+}
+
+.sme-priority-progress-bar {
+  position: absolute;
+  bottom: 32px;
+  left: 16px;
+  width: 306px;
+  height: 4px;
+  background: #EDEDED;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.sme-progress-fill {
+  height: 100%;
+  background: #00AE32;
+  border-radius: 8px;
+}
+
+.sme-priority-footer {
+  position: absolute;
+  bottom: 44px;
+  left: 16px;
+  right: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sme-priority-done {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19.1px;
+  color: #909090;
+}
+
+.sme-priority-due {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19.1px;
+  color: #909090;
+  text-align: right;
+}
+
+/* Upcoming Tasks Section */
+.sme-tasks-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.sme-tasks-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.sme-task-card {
+  width: 220px;
+  height: 148px;
+  background: #FFFFFF;
+  border: 1px solid #E3E3E3;
+  border-radius: 16px;
+  padding: 16px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sme-task-title {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21.8px;
+  color: #1B1B1B;
+  max-width: 191px;
+}
+
+.sme-task-project {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14.1px;
+  color: #909090;
+}
+
+.sme-task-badge {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16.4px;
+  color: #1B1B1B;
+}
+
+.sme-task-badge.red {
+  background: #FFE3E3;
+}
+
+.sme-task-badge.orange {
+  background: #FFEEDE;
+}
+
+.sme-task-badge.blue {
+  background: #DEE3FF;
+}
+
+/* Right Sidebar */
+.sme-right-sidebar {
+  width: 342px;
+  min-height: 100%;
+  background: #FFFFFF;
+  border-left: 1px solid #E3E3E3;
+  padding: 36px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.sme-profile-section {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sme-profile-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #FFD9A2;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.sme-profile-avatar::before {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 10px;
+  background: #1B1B1B;
+  border-radius: 50%;
+}
+
+.sme-profile-avatar::after {
+  content: '';
+  position: absolute;
+  bottom: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 16px;
+  height: 10px;
+  background: #1B1B1B;
+  border-radius: 50% 50% 0 0;
+}
+
+.sme-profile-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.sme-profile-name {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21.8px;
+  color: #1B1B1B;
+}
+
+.sme-profile-status {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16.4px;
+  color: #909090;
+}
+
+.sme-profile-dropdown {
+  width: 16px;
+  height: 16px;
+}
+
+.sme-projects-section,
+.sme-friends-section,
+.sme-activities-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sme-sidebar-title {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21.8px;
+  color: #909090;
+}
+
+.sme-project-list,
+.sme-friend-list,
+.sme-activity-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sme-project-item,
+.sme-friend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sme-project-icon,
+.sme-friend-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #C0A2FF;
+  position: relative;
+  flex-shrink: 0;
+}
+
+/* Project Icons - Different colored backgrounds */
+.sme-project-item:nth-child(1) .sme-project-icon {
+  background: #7CD4FD;
+}
+
+.sme-project-item:nth-child(2) .sme-project-icon {
+  background: #F38744;
+}
+
+.sme-project-item:nth-child(3) .sme-project-icon {
+  background: #2E90FA;
+}
+
+.sme-project-item:nth-child(4) .sme-project-icon {
+  background: #9E77ED;
+}
+
+.sme-project-item:nth-child(5) .sme-project-icon {
+  background: #039855;
+}
+
+/* Generic project icon */
+.sme-project-icon::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 14px;
+  height: 12px;
+  background: #FFFFFF;
+  clip-path: polygon(0 20%, 20% 0, 80% 0, 100% 20%, 100% 100%, 0 100%);
+}
+
+/* Friend Avatar - User silhouette */
+.sme-friend-avatar::before {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 10px;
+  background: #FFFFFF;
+  border-radius: 50%;
+}
+
+.sme-friend-avatar::after {
+  content: '';
+  position: absolute;
+  bottom: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 16px;
+  height: 10px;
+  background: #FFFFFF;
+  border-radius: 50% 50% 0 0;
+}
+
+/* Different colors for each friend */
+.sme-friend-item:nth-child(1) .sme-friend-avatar {
+  background: #F38744;
+}
+
+.sme-friend-item:nth-child(2) .sme-friend-avatar {
+  background: #7CD4FD;
+}
+
+.sme-friend-item:nth-child(3) .sme-friend-avatar {
+  background: #2E90FA;
+}
+
+.sme-friend-item:nth-child(4) .sme-friend-avatar {
+  background: #9E77ED;
+}
+
+.sme-friend-item:nth-child(5) .sme-friend-avatar {
+  background: #B0B0B0;
+}
+
+.sme-project-details,
+.sme-friend-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.sme-project-name,
+.sme-friend-name {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21.8px;
+  color: #1B1B1B;
+}
+
+.sme-project-members,
+.sme-friend-role {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16.4px;
+  color: #909090;
+}
+
+.sme-activity-item {
+  display: flex;
+  gap: 8px;
+}
+
+.sme-activity-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #11D700;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.sme-activity-avatar::before {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 10px;
+  background: #FFFFFF;
+  border-radius: 50%;
+}
+
+.sme-activity-avatar::after {
+  content: '';
+  position: absolute;
+  bottom: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 16px;
+  height: 10px;
+  background: #FFFFFF;
+  border-radius: 50% 50% 0 0;
+}
+
+/* Different colors for activities */
+.sme-activity-item:nth-child(2) .sme-activity-avatar {
+  background: #F38744;
+}
+
+.sme-activity-content {
+  flex: 1;
+  padding: 8px 12px;
+  background: #F4F4F4;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.sme-activity-text {
+  font-family: 'Satoshi', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18.9px;
+  color: #1B1B1B;
+}
+
+.sme-activity-time {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16.4px;
+  color: #909090;
+}
